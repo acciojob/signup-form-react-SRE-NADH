@@ -54,7 +54,7 @@ const App = () => {
         </select>
         <input data-testid = 'phoneNumber' placeholder="Phone number" onChange={(e)=>{setPhoneNumber(e.target.value)}}/>
         <input data-testid = 'password' placeholder="password" type="password" onChange={(e)=>{setPassword(e.target.value)}}/>
-        <button style={{width:'100px', borderRadius:'5px', border:'none', cursor:'pointer'}}onClick={handleSubmit}>Submit</button>
+        <button data-testid="submit" style={{width:'100px', borderRadius:'5px', border:'none', cursor:'pointer'}} onClick={handleSubmit}>Submit</button>
           {error && <p style={{color:'red'}}>{error}</p>}
           {message && <p style={{color:'green'}}>{message}</p>}
       </form>
